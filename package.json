@@ -1,0 +1,16 @@
+{
+  "name": "sga-electronjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "nodemon --exec electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^23.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

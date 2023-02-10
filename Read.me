@@ -1,0 +1,70 @@
+Electron is a popular framework for building cross-platform desktop applications using web technologies such as HTML, CSS, and JavaScript. Here's a step-by-step guide on how to create an Electron project:
+
+Install Node.js and npm (Node Package Manager) on your computer if you haven't already.
+
+Create a new folder for your project, open a terminal or command prompt in that folder, and run the following command:
+
+csharp
+Copy code
+npm init -y
+This will create a package.json file for your project, which will keep track of all the dependencies you install.
+
+Install the Electron package by running the following command:
+css
+Copy code
+npm install electron --save-dev
+Create an HTML file named index.html in your project folder with the following contents:
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello Electron</title>
+</head>
+<body>
+  <h1>Hello Electron</h1>
+</body>
+</html>
+Create a JavaScript file named main.js in your project folder with the following contents:
+javascript
+Copy code
+const { app, BrowserWindow } = require('electron');
+
+let mainWindow;
+
+app.on('ready', () => {
+  mainWindow = new BrowserWindow({
+    width: 800,
+    height: 600
+  });
+
+  mainWindow.loadFile('index.html');
+});
+Add the following line to your package.json file under the "scripts" section:
+json
+Copy code
+"start": "electron ."
+Run the following command to start your Electron app:
+sql
+Copy code
+npm start
+Your Electron app should now be up and running! You can modify the HTML, CSS, and JavaScript files to build your app as you like.
+
+This is just a simple example to get you started, but Electron offers many more features and APIs that you can use to build more complex applications. I would recommend reading the Electron documentation for more information.
+
+
+
+
+
+
+
+
+
+
+########### Recuperando a node_modules ################################
+Se você precisar baixar a pasta node_modules novamente, basta executar o comando npm install na raiz do seu projeto.
+
+O comando npm install lê o arquivo package.json do seu projeto e instala todas as dependências listadas nele. Se você já tem um arquivo package.json completo, basta executar esse comando para instalar todas as dependências necessárias para o seu projeto funcionar corretamente.
+
+Se você ainda não tem um arquivo package.json completo, você pode criá-lo com o comando npm init e responder às perguntas sobre o seu projeto. Em seguida, execute o comando npm install para instalar as dependências.
