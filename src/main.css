@@ -2,7 +2,44 @@
     margin: 0 auto;
     padding: 0%;
 }
-body{
-    background-color: rgb(18, 118, 207);
+body {
+    background: rgb(16,99,159);
+    background: radial-gradient(circle, rgba(16,99,159,1) 0%, rgba(0,45,81,1) 83%, rgba(0,25,54,1) 100%);  background: rgb(0,25,54);
+    background: radial-gradient(circle, rgba(0,25,54,1) 0%, rgba(0,45,81,1) 35%, rgba(16,99,159,1) 82%);
     
+  }
+
+  iframe{
+    background-color: #003C68;
+  }
+  .header {
+    background-image: url('./imagens/support.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 360px;
+    height: 80px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.text-center{
+    text-align: center;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #001834;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18pt;
+ }
+
+ .card {
+    margin: 10px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
