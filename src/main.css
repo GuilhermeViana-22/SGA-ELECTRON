@@ -3,10 +3,8 @@
     padding: 0%;
 }
 body {
-    background: rgb(16,99,159);
-    background: radial-gradient(circle, rgba(16,99,159,1) 0%, rgba(0,45,81,1) 83%, rgba(0,25,54,1) 100%);  background: rgb(0,25,54);
-    background: radial-gradient(circle, rgba(0,25,54,1) 0%, rgba(0,45,81,1) 35%, rgba(16,99,159,1) 82%);
-    
+    background: rgb(255, 255, 255);
+    overflow-x: hidden;
   }
 
   iframe{
@@ -24,6 +22,9 @@ body {
 .text-center{
     text-align: center;
 }
+.paciente{
+    text-align: left !important;
+}
 footer {
     position: fixed;
     left: 0;
@@ -40,6 +41,11 @@ footer {
     margin: 10px;
     padding: 20px;
     background-color: #f2f2f2;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
     border-radius: 5px;
 }
+i{
+    color: rgb(255, 0, 0);
+}
+hr{margin-top: 20px;}
